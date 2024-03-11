@@ -18,8 +18,9 @@ function Board({ activeBoard, boards, setBoards }) {
     if (!taskDescription) return alert("Please enter task");
     setBoards((prevBoards) => {
       const newBoards = [...prevBoards];
+      const timestamp = new Date().getTime(); // Get the current timestamp
       newBoards[activeBoardIndex].card[index].tasks.push({
-        id: `b${activeBoardIndex + 1}-c${index + 1}-t${newBoards[activeBoardIndex].card[index].tasks.length + 1}`,
+        id: `b${activeBoardIndex + 1}-c${index + 1}-t${timestamp}`,
         desc: taskDescription,
         isEditing: false,
       });
