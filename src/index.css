@@ -43,16 +43,20 @@ body {
 }
 
 .app-header {
-  background-color: #a0e9ff;
-  padding-left: 8px;
+  /* background-color: #a0e9ff; */
+  background-color: #656ef5;
+  padding-left: 12px;
   display: flex;
   align-items: center;
-  height: 55px;
+  height: 60px;
   min-width: 100%;
+  color: #fff;
 }
 
 nav {
-  background-color: #91c8e4;
+  /* background-color: #91c8e4; */
+  /* background-color: #86B6F6; */
+  background-color: #ebebf3;
   width: 29rem;
   display: flex;
   flex-direction: column;
@@ -103,11 +107,11 @@ nav.collapsed {
 
 .add-board {
   position: absolute;
-  background-color: #ba90c6;
+  background-color: #86B6F6;
   height: 200px;
-  width: 180px;
+  width: 190px; 
   left: 290px;
-  top: 100px;
+  top: 60px;
   z-index: 1;
 }
 .add-board h4 {
@@ -173,18 +177,18 @@ input[type="color"]::-webkit-color-swatch {
 } */
 
 .add-board input[type="submit"] {
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 162px;
-  left: 2.3px;
+  top: 27px;
+  left: 4.5px;
   height: 16%;
-  width: 97%;
+  width: 95%;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.6rem;
   color: #fff;
-  background-color: #40679e;
+  background-color: #1c6ee1;
 }
 
 .add-board input[type="submit"]:hover {
@@ -226,7 +230,7 @@ input[type="color"]::-webkit-color-swatch {
 
 .container {
   display: flex;
-  min-height: calc(100vh - 55px);
+  min-height: calc(100vh - 60px);
 }
 main {
   display: flex;
@@ -235,7 +239,8 @@ main {
 }
 
 main .menu {
-  background-color: #89cff3;
+  /* background-color: #89cff3; */
+  background-color: #e3eadd;
   height: 50px;
   width: 100%;
   padding-left: 10px;
@@ -382,7 +387,7 @@ main .board {
 
   .add-board {
     left: 195px;
-    top: 55px;
-    width: 150px;
+    top: 60px;
+    width: 160px;
   }
 }

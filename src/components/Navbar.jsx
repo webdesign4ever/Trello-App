@@ -19,7 +19,7 @@ function Navbar({ boards, setBoards, isCollapsed, toggleCollapse, onBoardClick, 
     e.preventDefault();
     if (!newBoardName) return alert("Please enter a name for the board");
     const boardExists = boards.find(
-      (board) => board.name === newBoardName.replace(/\s/g, "")
+      (board) => board.name.replace(/\s/g, "").toLowerCase() === newBoardName.replace(/\s/g, "").toLowerCase()
     );
     if (boardExists) return alert("A board with that name already exists");
     setBoards((prevBoards) => [
